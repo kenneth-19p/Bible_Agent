@@ -6,7 +6,38 @@ sdk_version: 5.31.0
 ---
 # BibleAgent Crew
 
-Welcome to the BibleAgent Crew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
+Bible Agent is an AI-powered application designed to provide multi-layered biblical insights by leveraging multiple specialized agents. Built using CrewAI and deployed with Gradio on Hugging Face Spaces, it offers users rich responses to biblical queries with context, commentary, and pastoral wisdom.
+
+## Architecture
+The system utilizes three main agents:
+
+- Bible Agent: Fetches relevant Bible verses.
+
+- Theological Scholar Agent: Searches for expert commentary and uses web search tools for deeper research.
+
+- Seasoned Pastor Agent: Synthesizes the results and delivers a spiritually insightful summary.
+
+## Workflow
+1. User Input: The user asks a question (e.g., “What does the Bible say about love?”).
+
+2. Bible Agent: Retrieves relevant verses from different Bible versions.
+
+3. Theological Scholar Agent: Gathers expert commentaries using web tools.
+
+4. Seasoned Pastor Agent: Integrates scripture and scholarship into a concise, practical response.
+
+## Key Features
+Multi-agent system using CrewAI
+
+Web search powered by SerperDevTool
+
+Deployed with Gradio on Hugging Face Spaces
+
+Agentic Workflow: Modular, extensible, and interpretable
+
+
+Live Demo:
+[Try it on Hugging Face Spaces](https://huggingface.co/spaces/Kenneth19p/BIBLE_AGENT)
 
 ## Installation
 
