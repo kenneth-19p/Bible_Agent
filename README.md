@@ -27,13 +27,13 @@ The system utilizes three main agents:
 4. Seasoned Pastor Agent: Integrates scripture and scholarship into a concise, practical response.
 
 ## Key Features
-Multi-agent system using CrewAI
+- Multi-agent system using CrewAI
 
-Web search powered by SerperDevTool
+- Web search powered by SerperDevTool
 
-Deployed with Gradio on Hugging Face Spaces
+- Deployed with Gradio on Hugging Face Spaces
 
-Agentic Workflow: Modular, extensible, and interpretable
+- Agentic Workflow: Modular, extensible, and interpretable
 
 
 Live Demo:
