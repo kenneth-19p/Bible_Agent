@@ -1,0 +1,36 @@
+search_verses:
+  description: >
+   Search for Bible verses related to a given topic {topic} or query and return the best matching verses from {bible_version} from the user.
+   Use the KJV version if no version is specified.
+   Note: If the {topic} does not relate to the bible, do not initiate the process.
+  agent: bible_agent
+
+
+fetch_commentary:
+  description: >
+    Fetch commentary excerpts and contextual explanations for a given Bible passage or topic from trusted online sources 
+    (Theology of Work, Matthew Henry, Reformation Study Bible).
+    If the user wants you to compare different versions, you should provide the verses from all versions.
+    Ensure the commentaries are concise, relevant, and provide theological insights that enhance understanding of the scripture.
+    Note: If the {topic} does not relate to the bible, do not initiate the process.
+  agent: commentary_researcher
+  input_variables:
+    - passage_or_topic
+    - bible_version
+  output_variables:
+    - commentary_results
+
+
+pastoral_summary:
+  description: >
+    Take as input the verses and commentaries found by the other agents. Provide a concise, spiritually insightful,
+    and contextually relevant answer for the user, suitable for personal reflection or group discussion.
+    Give moral lessons and practical applications of the verses and commentaries for the user.
+    Ensure that the final summary is suitable for personal reflection or group discussion, and addresses the user's original query {topic}.
+    Note: If the {topic} does not relate to the bible, do not initiate the process.
+  agent: seasoned_pastor
+  input_variables:
+    - verses
+    - commentary
+  output_variables:
+    - final_summary
